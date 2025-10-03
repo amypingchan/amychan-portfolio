@@ -1,0 +1,24 @@
+{
+  "name": "Portfolio",
+  "version": "0.0.0",
+  "description": "Amy Ping Ping Chan Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Amy Ping Ping Chan",
+  "license": "BSD",
+  "dependencies": {
+    "astro": "^5.13.11",
+    "gsap": "^3.13.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.3.3"
+  }
+}

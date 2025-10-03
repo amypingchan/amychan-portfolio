@@ -1,0 +1,27 @@
+---
+const navLinks = [
+  { name: "Home", href: "#home" },
+  { name: "About", href: "#about" },
+  { name: "Projects", href: "#projects" },
+  { name: "Contact", href: "#contact" },
+];
+---
+
+<nav class="fixed top-0 left-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="#home" class="font-bold text-xl text-primary">Amy Chan</a>
+    <ul class="hidden md:flex gap-6">
+      {navLinks.map(link => (
+        <li>
+          <a href={link.href} class="nav-link hover:text-primary transition-colors">{link.name}</a>
+        </li>
+      ))}
+    </ul>
+    <button
+      id="theme-toggle"
+      class="ml-4 rounded-full p-2 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+    >
+      🌓
+    </button>
+  </div>
+</nav>
