@@ -1,9 +1,84 @@
-<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Amy Ping Ping Chan | Portfolio</title><link rel="stylesheet" href="/docs/styles/index.css"></head> <body class="pt-20 bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300"> <nav class="fixed top-0 left-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm z-50"> <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center"> <a href="#home" class="font-bold text-xl text-primary">Amy Chan</a> <ul class="hidden md:flex gap-6"> <li> <a href="#home" class="nav-link hover:text-primary transition-colors">Home</a> </li><li> <a href="#about" class="nav-link hover:text-primary transition-colors">About</a> </li><li> <a href="#projects" class="nav-link hover:text-primary transition-colors">Projects</a> </li><li> <a href="#contact" class="nav-link hover:text-primary transition-colors">Contact</a> </li> </ul> <button id="theme-toggle" class="ml-4 rounded-full p-2 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition">
-🌓
-</button> </div> </nav> <main> <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6"> <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Hi, I'm <span class="text-primary">Amy</span></h1> <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8">Designer • Developer • Creative Mind</p> <a href="#projects" class="px-6 py-3 bg-primary text-white rounded-lg shadow hover:bg-primary/90 transition">
-View My Work
-</a> </section> <section id="about" class="py-20 max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center"> <img src="/images/profile.jpg" alt="Amy Chan" class="rounded-2xl shadow-lg w-full object-cover"> <div> <h2 class="text-3xl font-bold mb-4">About Me</h2> <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-I'm a passionate designer and developer who loves crafting clean and engaging digital experiences.
-      With a background in creative media and tech, I bring ideas to life through thoughtful design and
-      modern web technologies.
-</p> </div> </section> <section id="projects" class="py-20 max-w-6xl mx-auto px-6"> <h2 class="text-3xl font-bold mb-10 text-center">Projects</h2> <div class="grid md:grid-cols-3 gap-8"> <div class="project-card bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-lg transition overflow-hidden"> <img src="/images/project1.jpg" alt="Project 1" class="w-full h-48 object-cover"> <div class="p-6"> <h3 class="text-xl font-semibold mb-2">Project One</h3> <p class="text-gray-600 dark:text-gray-300">Brief description of your project here.</p> </div> </div> <div class="project-card bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-lg transition overflow-hidden"> <img src="/images/project2.jpg" alt="Project 2" class="w-full h-48 object-cover"> <div class="p-6"> <h3 class="text-xl font-semibold mb-2">Project Two</h3> <p class="text-gray-600 dark:text-gray-300">Brief description of your project here.</p> </div> </div> <div class="project-card bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-lg transition overflow-hidden"> <img src="/images/project3.jpg" alt="Project 3" class="w-full h-48 object-cover"> <div class="p-6"> <h3 class="text-xl font-semibold mb-2">Project Three</h3> <p class="text-gray-600 dark:text-gray-300">Brief description of your project here.</p> </div> </div> </div> </section> <section id="contact" class="py-24 bg-white dark:bg-gray-800 text-secondary dark:text-gray-100 px-6 max-w-5xl mx-auto text-center"> <h2 class="text-4xl font-bold mb-6">Contact Me</h2> <p class="text-lg mb-6">Feel free to reach out for projects, collaborations, or just to say hi!</p> <a href="mailto:amy@example.com" class="px-6 py-3 bg-primary text-white rounded hover:bg-purple-700 transition">Email Me</a> </section> </main> <script type="module" src="/js/main.js"></script> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amy Ping Ping Chan | Portfolio</title>
+  <!-- Use relative path for CSS -->
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body class="pt-20 bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+  <nav class="fixed top-0 left-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#home" class="font-bold text-xl text-primary">Amy Chan</a>
+      <ul class="hidden md:flex gap-6">
+        <li><a href="#home" class="nav-link hover:text-primary transition-colors">Home</a></li>
+        <li><a href="#about" class="nav-link hover:text-primary transition-colors">About</a></li>
+        <li><a href="#projects" class="nav-link hover:text-primary transition-colors">Projects</a></li>
+        <li><a href="#contact" class="nav-link hover:text-primary transition-colors">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" class="ml-4 rounded-full p-2 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition">🌓</button>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+      <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Hi, I'm <span class="text-primary">Amy</span></h1>
+      <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8">Designer • Developer • Creative Mind</p>
+      <a href="#projects" class="px-6 py-3 bg-primary text-white rounded-lg shadow hover:bg-primary/90 transition">View My Work</a>
+    </section>
+
+    <section id="about" class="py-20 max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <!-- Relative path for profile image -->
+      <img src="images/profile.jpg" alt="Amy Chan" class="rounded-2xl shadow-lg w-full object-cover">
+      <div>
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+          I'm a passionate designer and developer who loves crafting clean and engaging digital experiences.
+          With a background in creative media and tech, I bring ideas to life through thoughtful design and
+          modern web technologies.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="py-20 max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-10 text-center">Projects</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="project-card bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+          <img src="images/project1.jpg" alt="Project 1" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Project One</h3>
+            <p class="text-gray-600 dark:text-gray-300">Brief description of your project here.</p>
+          </div>
+        </div>
+
+        <div class="project-card bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+          <img src="images/project2.jpg" alt="Project 2" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Project Two</h3>
+            <p class="text-gray-600 dark:text-gray-300">Brief description of your project here.</p>
+          </div>
+        </div>
+
+        <div class="project-card bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+          <img src="images/project3.jpg" alt="Project 3" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Project Three</h3>
+            <p class="text-gray-600 dark:text-gray-300">Brief description of your project here.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-white dark:bg-gray-800 text-secondary dark:text-gray-100 px-6 max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6">Contact Me</h2>
+      <p class="text-lg mb-6">Feel free to reach out for projects, collaborations, or just to say hi!</p>
+      <a href="mailto:amy@example.com" class="px-6 py-3 bg-primary text-white rounded hover:bg-purple-700 transition">Email Me</a>
+    </section>
+  </main>
+
+  <!-- Relative path for JS -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
